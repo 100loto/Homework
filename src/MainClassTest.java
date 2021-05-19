@@ -24,8 +24,23 @@ public class MainClassTest extends MainClass
         int actual = this.getLocalNumber();
         System.out.println("Start first test");
         Assert.assertTrue("The number should be > 45, but your is " + actual, actual > value);
-
     }
 
+
+    @Test
+    public void testGetClassString()
+    {
+        String text = this.getClass_string();
+        if (text.contains("hello"))
+        {
+            System.out.println("ok");
+        } else if (text.contains("Hello"))
+        {
+            System.out.println("ok");
+        } else
+        {
+            Assert.fail("There are no Hello or hello in str");
+        }
+    }
 
 }
