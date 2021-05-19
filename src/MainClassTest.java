@@ -3,7 +3,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class mainClassTest extends MainClass
+public class MainClassTest extends MainClass
 {
 
     @Before
@@ -23,7 +23,7 @@ public class mainClassTest extends MainClass
         int expected = 14;
         int actual = this.getLocalNumber();
         System.out.println("Start first test");
-        Assert.assertTrue("The number should be == 14, but your is " + actual,expected == actual);
+        Assert.assertTrue("The number should be == 14, but your is " + actual, expected == actual);
 
     }
 
