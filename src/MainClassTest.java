@@ -20,10 +20,10 @@ public class MainClassTest extends MainClass
 
     @Test
     public void testGetLocalNumber() {
-        int expected = 14;
+        int value = 45;
         int actual = this.getLocalNumber();
         System.out.println("Start first test");
-        Assert.assertTrue("The number should be == 14, but your is " + actual, expected == actual);
+        Assert.assertTrue("The number should be > 45, but your is " + actual, actual > value);
 
     }
 
